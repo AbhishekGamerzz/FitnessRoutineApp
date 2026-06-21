@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView android:text="Your 6-Day Upper/Lower Routine" android:textSize="20sp" android:textStyle="bold" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:text="Personalized for your goals" android:textSize="14sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Stats -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8f5e9"
+            android:padding="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <TextView android:text="6" android:textSize="24sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Days/Week" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <TextView android:text="40" android:textSize="24sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Exercises" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <TextView android:text="19" android:textSize="24sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Muscle Groups" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Muscle Figures -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <LinearLayout android:layout_width="160dp" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">
+                <ImageView android:layout_width="140dp" android:layout_height="280dp" android:src="@drawable/front_body" android:scaleType="fitCenter" android:contentDescription="Front body"/>
+                <TextView android:text="Front" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="160dp" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">
+                <ImageView android:layout_width="140dp" android:layout_height="280dp" android:src="@drawable/back_body" android:scaleType="fitCenter" android:contentDescription="Back body"/>
+                <TextView android:text="Back" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Fatigue -->
+        <TextView android:text="Fatigue Gradient" android:gravity="center" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="280dp"
+            android:layout_height="10dp"
+            android:background="@drawable/fatigue_gradient"
+            android:layout_gravity="center"/>
+
+        <!-- Day Tabs -->
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:text="Mon" android:backgroundTint="#1976D2" android:textColor="#FFFFFF" android:layout_margin="4dp"/>
+                <Button android:text="Tue" android:layout_margin="4dp"/>
+                <Button android:text="Wed" android:layout_margin="4dp"/>
+                <Button android:text="Thu" android:layout_margin="4dp"/>
+                <Button android:text="Fri" android:layout_margin="4dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Get App Button -->
+        <Button
+            android:id="@+id/btn_get_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="↓ Get the App"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"
+            android:layout_margin="16dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</ScrollView>
